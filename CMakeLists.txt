@@ -12,3 +12,6 @@ add_executable(Example-3 Variables/Example-3/main.c)
 add_executable(Example-4 Variables/Example-4/main.c)
 add_executable(Example-5 Variables/Example-5/main.c)
 add_executable(Explicit-example Variables/Explicit-example/main.c)
+
+add_executable(Simple-for_loop Loops/Simple-for_loop/main.c)
+add_executable(Triangular-numbers Loops/Triangular-numbers/main.c)
