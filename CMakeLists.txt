@@ -5,5 +5,10 @@ set(CMAKE_C_STANDARD 11)
 
 include_directories(.)
 
-add_executable(PROG_2007
-        helloworld/main.c)
+add_executable(PROG_2007 Variables/helloworld/main.c)
+add_executable(C_to_F Variables/C-To-F/main.c)
+add_executable(Example-2 Variables/Example-2/main.c)
+add_executable(Example-3 Variables/Example-3/main.c)
+add_executable(Example-4 Variables/Example-4/main.c)
+add_executable(Example-5 Variables/Example-5/main.c)
+add_executable(Explicit-example Variables/Explicit-example/main.c)
