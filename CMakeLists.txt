@@ -15,3 +15,5 @@ add_executable(Explicit-example Variables/Explicit-example/main.c)
 
 add_executable(Simple-for_loop Loops/Simple-for_loop/main.c)
 add_executable(Triangular-numbers Loops/Triangular-numbers/main.c)
+add_executable(Squares Loops/Squares/main.c)
+add_executable(digit_sum Loops/digit_sum/main.c)
