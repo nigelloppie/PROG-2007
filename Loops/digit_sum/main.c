@@ -8,14 +8,39 @@ int main () {
     printf("Enter an integer: ");
     scanf("%i", &num);
 
+
     int sum = 0;
     int digit = 0;
-    while (num > 0) {
-        digit = num % 10;
+    int temp = num;
+    int num_digits = 0;
+    while (temp > 0) {
+        digit = temp % 10;
         printf("%i ",digit);
         sum += digit;
-        num /= 10;
+        temp /= 10;
+
+        num_digits++;
     }
+
     printf("sum = %i\n", sum);
+
+    int reversed_num = 0;
+
+    temp = num;
+    for (int place_holder = num_digits; place_holder > 0; place_holder--){
+        digit = num % 10;
+        reversed_num += digit;
+        if (place_holder > 1) {
+            reversed_num *= 10;
+        }
+        num /= 10;
+    }printf("reversed num = %i\n", reversed_num);
+    while(reversed_num > 0) {
+        digit = reversed_num %10;
+        printf("%i", digit);
+        reversed_num /=  10;
+    }
+    printf(" = %i\n", sum);
+
     return 0;
 }
